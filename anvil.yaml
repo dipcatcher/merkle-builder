@@ -1,5 +1,42 @@
 allow_embedding: false
-package_name: Custom_HTML_11
-name: Custom HTML 11
+package_name: merkle_builder
+startup: {type: form, module: methods}
+name: merkle builder
+startup_form: null
+native_deps: {head_html: "<script src=\"https://cdn.ethers.io/lib/ethers-5.6.umd.min.js\"\
+    \ type=\"text/javascript\"></script>\n<!--\n  JSPM Generator Import Map\n  Edit\
+    \ URL: https://generator.jspm.io/#Y2NhYGBkDM0rySzJSU1hcMgvSM2rSi0oSM3JzNPPTS3KzknVLSlKTXUw1DPQMwEArPLzzC4A\n\
+    -->\n <script type=\"importmap\">\n{\n  \"imports\": {\n    \"@openzeppelin/merkle-tree\"\
+    : \"https://ga.jspm.io/npm:@openzeppelin/merkle-tree@1.0.4/dist/index.js\"\n \
+    \ },\n  \"scopes\": {\n    \"https://ga.jspm.io/\": {\n      \"@ethersproject/abi\"\
+    : \"https://ga.jspm.io/npm:@ethersproject/abi@5.7.0/lib.esm/index.js\",\n    \
+    \  \"@ethersproject/address\": \"https://ga.jspm.io/npm:@ethersproject/address@5.7.0/lib.esm/index.js\"\
+    ,\n      \"@ethersproject/base64\": \"https://ga.jspm.io/npm:@ethersproject/base64@5.7.0/lib.esm/index.js\"\
+    ,\n      \"@ethersproject/bignumber\": \"https://ga.jspm.io/npm:@ethersproject/bignumber@5.7.0/lib.esm/index.js\"\
+    ,\n      \"@ethersproject/bytes\": \"https://ga.jspm.io/npm:@ethersproject/bytes@5.7.0/lib.esm/index.js\"\
+    ,\n      \"@ethersproject/constants\": \"https://ga.jspm.io/npm:@ethersproject/constants@5.7.0/lib.esm/index.js\"\
+    ,\n      \"@ethersproject/hash\": \"https://ga.jspm.io/npm:@ethersproject/hash@5.7.0/lib.esm/index.js\"\
+    ,\n      \"@ethersproject/keccak256\": \"https://ga.jspm.io/npm:@ethersproject/keccak256@5.7.0/lib/index.js\"\
+    ,\n      \"@ethersproject/logger\": \"https://ga.jspm.io/npm:@ethersproject/logger@5.7.0/lib.esm/index.js\"\
+    ,\n      \"@ethersproject/properties\": \"https://ga.jspm.io/npm:@ethersproject/properties@5.7.0/lib.esm/index.js\"\
+    ,\n      \"@ethersproject/rlp\": \"https://ga.jspm.io/npm:@ethersproject/rlp@5.7.0/lib.esm/index.js\"\
+    ,\n      \"@ethersproject/strings\": \"https://ga.jspm.io/npm:@ethersproject/strings@5.7.0/lib.esm/index.js\"\
+    ,\n      \"@noble/hashes/_assert\": \"https://ga.jspm.io/npm:@noble/hashes@1.2.0/_assert.js\"\
+    ,\n      \"@noble/hashes/crypto\": \"https://ga.jspm.io/npm:@noble/hashes@1.2.0/cryptoBrowser.js\"\
+    ,\n      \"@noble/hashes/sha3\": \"https://ga.jspm.io/npm:@noble/hashes@1.2.0/sha3.js\"\
+    ,\n      \"@noble/hashes/utils\": \"https://ga.jspm.io/npm:@noble/hashes@1.2.0/utils.js\"\
+    ,\n      \"bn.js\": \"https://ga.jspm.io/npm:bn.js@5.2.1/lib/bn.js\",\n      \"\
+    buffer\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/buffer.js\"\
+    ,\n      \"ethereum-cryptography/keccak\": \"https://ga.jspm.io/npm:ethereum-cryptography@1.2.0/keccak.js\"\
+    ,\n      \"ethereum-cryptography/utils\": \"https://ga.jspm.io/npm:ethereum-cryptography@1.2.0/utils.js\"\
+    ,\n      \"js-sha3\": \"https://ga.jspm.io/npm:js-sha3@0.8.0/src/sha3.js\",\n\
+    \      \"process\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/process-production.js\"\
+    \n    }\n  }\n}\n</script>\n\n<!-- ES Module Shims: Import maps polyfill for modules\
+    \ browsers without import maps support (Safari 16.3) -->\n<script async src=\"\
+    https://ga.jspm.io/npm:es-module-shims@1.5.1/dist/es-module-shims.js\" crossorigin=\"\
+    anonymous\"></script>"}
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
-services: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
