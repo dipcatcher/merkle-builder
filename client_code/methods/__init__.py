@@ -1,7 +1,7 @@
 from ._anvil_designer import methodsTemplate
 from anvil import *
-from anvil.js import import_from
 import json
+from anvil.js import import_from
 StandardMerkleTree = import_from("@openzeppelin/merkle-tree").StandardMerkleTree
 class methods(methodsTemplate):
   def __init__(self, **properties):
