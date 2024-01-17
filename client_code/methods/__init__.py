@@ -11,7 +11,8 @@ class methods(methodsTemplate):
     '''pass data and format, name of fields'''
     tree = StandardMerkleTree.of(data, format)
     root = tree.root
-    proofs = [{"proof":json.dumps(tree.getProof(data.index(r))), identifier:r[0], value:r[1]} for r in data]
+    #proofs = [{"proof":json.dumps(tree.getProof(data.index(r))), identifier:r[0], value:r[1]} for r in data]
+    proofs = [{"proof":tree.getProof(data.index(r)), identifier:r[0], value:r[1]} for r in data]
     return tree, root, proofs
 
     # Any code you write here will run before the form opens.
